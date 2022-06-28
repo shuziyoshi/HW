@@ -1,0 +1,118 @@
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: white;
+}
+.search 
+{
+  position: relative;
+  width: 360px;
+  height: 60px;
+  background: white;
+  border-radius: 60px;
+  transition: 0.5s;
+  box-shadow: 0 0 0 5px whitesmoke;
+  overflow: hidden;
+  margin-top: 8px;
+  margin-right: 16px;
+}
+
+.search .icon
+{
+  position: absolute;
+  top:20;
+  left:30px;
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 60px;
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+.search .icon::before
+{
+  content: ' ';
+  position: absolute;
+  width: 13px;
+  height: 16px;
+  border:1px soild blue;
+  border-radius: 40%;
+  transform: translate(-4px,-4px);
+  box-shadow:0 0 0 4px #287dfc;
+}
+.search .icon::after
+{
+  content: ' ';
+  position: absolute;
+  width: 3px;
+  height: 12px;
+  background: #287dfc;
+  transform: translate(7px,4px) rotate(315deg);
+  
+}
+.search .input{
+  position: relative;
+  width: 30000px;
+  height: 60px;
+  left:60px;
+  display: felx;
+  justify-content: center;
+  align-items: center;
+}
+.search .input input{
+  position: absolute;
+  top:0;
+  width: 1500%;
+  height: 100%;
+  border: none;
+  outline: navajowhite;
+  font-size: 20px;
+  padding: 1px 0;
+
+}
+.search.active{
+  width:800px;
+
+}
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+  
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 20px 20px;
+}
+
+th {
+  background-color: rgb(235,235,235);
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) td {
+  background-color: rgb(250,250,250);
+}
+
+tr:nth-child(odd) td {
+  background-color: rgb(232, 194, 194);
+}
+
+caption {
+
+
+
+
+
